@@ -8,6 +8,8 @@ import { Document } from './document';
 })
 
 export class DocumentsComponent {
+	pageTitle: string = "Document Dashboard"
+	
 	documents: Document[] = [
 		{
 			title: "My First Doc",
@@ -24,7 +26,7 @@ export class DocumentsComponent {
 			image_url: 'http://google.com',
 		},
 		{
-			title: "My third Doc",
+			title: "My Third Doc",
 			description: "some description",
 			file_url: 'http://google.com',
 			updated_at: '9/15/17',
