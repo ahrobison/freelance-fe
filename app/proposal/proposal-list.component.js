@@ -6,10 +6,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const proposal_1 = require("./proposal");
-let ProposalListComponent = class ProposalListComponent {
-    constructor() {
+var core_1 = require("@angular/core");
+var proposal_1 = require("./proposal");
+var ProposalListComponent = /** @class */ (function () {
+    function ProposalListComponent() {
         this.proposalOne = new proposal_1.Proposal(15, 'Abc Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com');
         this.proposalTwo = new proposal_1.Proposal(90, 'Jkl Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com');
         this.proposalThree = new proposal_1.Proposal(300, 'Mno Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com');
@@ -19,13 +19,14 @@ let ProposalListComponent = class ProposalListComponent {
             this.proposalThree
         ];
     }
-};
-ProposalListComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'proposal-list',
-        templateUrl: 'proposal-list.component.html'
-    })
-], ProposalListComponent);
+    ProposalListComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'proposal-list',
+            templateUrl: 'proposal-list.component.html'
+        })
+    ], ProposalListComponent);
+    return ProposalListComponent;
+}());
 exports.ProposalListComponent = ProposalListComponent;
 //# sourceMappingURL=proposal-list.component.js.map

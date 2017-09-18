@@ -6,9 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-let DocumentsComponent = class DocumentsComponent {
-    constructor() {
+var core_1 = require("@angular/core");
+var DocumentsComponent = /** @class */ (function () {
+    function DocumentsComponent() {
         this.pageTitle = "Document Dashboard";
         this.documents = [
             {
@@ -34,13 +34,14 @@ let DocumentsComponent = class DocumentsComponent {
             },
         ];
     }
-};
-DocumentsComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'documents',
-        templateUrl: 'documents.component.html',
-    })
-], DocumentsComponent);
+    DocumentsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'documents',
+            templateUrl: 'documents.component.html',
+        })
+    ], DocumentsComponent);
+    return DocumentsComponent;
+}());
 exports.DocumentsComponent = DocumentsComponent;
 //# sourceMappingURL=documents.component.js.map

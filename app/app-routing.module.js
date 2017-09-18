@@ -6,28 +6,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const router_1 = require("@angular/router");
-const homepage_component_1 = require("./homepage/homepage.component");
-const documents_component_1 = require("./documents/documents.component");
-const proposal_list_component_1 = require("./proposal/proposal-list.component");
-const proposal_new_component_1 = require("./proposal/proposal-new.component");
-const proposal_show_component_1 = require("./proposal/proposal-show.component");
-const routes = [
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var homepage_component_1 = require("./homepage/homepage.component");
+var documents_component_1 = require("./documents/documents.component");
+var proposal_list_component_1 = require("./proposal/proposal-list.component");
+var proposal_new_component_1 = require("./proposal/proposal-new.component");
+var proposal_show_component_1 = require("./proposal/proposal-show.component");
+var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: homepage_component_1.HomepageComponent },
     { path: 'documents', component: documents_component_1.DocumentsComponent },
     { path: 'proposals', component: proposal_list_component_1.ProposalListComponent },
     { path: 'proposals/new', component: proposal_new_component_1.ProposalNewComponent },
-    { path: 'proposals/:id', component: proposal_show_component_1.ProposalShowComponent },
+    { path: 'proposals/:id', component: proposal_show_component_1.ProposalShowComponent }
 ];
-let AppRoutingModule = class AppRoutingModule {
-};
-AppRoutingModule = __decorate([
-    core_1.NgModule({
-        imports: [router_1.RouterModule.forRoot(routes)],
-        exports: [router_1.RouterModule]
-    })
-], AppRoutingModule);
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
 exports.AppRoutingModule = AppRoutingModule;
 //# sourceMappingURL=app-routing.module.js.map

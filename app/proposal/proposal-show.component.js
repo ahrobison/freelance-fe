@@ -9,25 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const router_1 = require("@angular/router");
-let ProposalShowComponent = class ProposalShowComponent {
-    constructor(route) {
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var ProposalShowComponent = /** @class */ (function () {
+    function ProposalShowComponent(route) {
         this.route = route;
     }
-    ngOnInit() {
-        this.routeId = this.route.params.subscribe(params => {
-            this.id = +params['id'];
+    ProposalShowComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.routeId = this.route.params.subscribe(function (params) {
+            _this.id = +params['id'];
         });
-    }
-};
-ProposalShowComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'proposal-show',
-        templateUrl: 'proposal-show.component.html'
-    }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute])
-], ProposalShowComponent);
+    };
+    ProposalShowComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'proposal-show',
+            templateUrl: 'proposal-show.component.html'
+        }),
+        __metadata("design:paramtypes", [router_1.ActivatedRoute])
+    ], ProposalShowComponent);
+    return ProposalShowComponent;
+}());
 exports.ProposalShowComponent = ProposalShowComponent;
 //# sourceMappingURL=proposal-show.component.js.map
