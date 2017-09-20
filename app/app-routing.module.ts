@@ -7,14 +7,13 @@ import { ProposalListComponent } from './proposal/proposal-list.component';
 import { ProposalNewComponent } from './proposal/proposal-new.component';
 import { ProposalShowComponent } from './proposal/proposal-show.component';
 
-
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomepageComponent },
 	{ path: 'documents', component: DocumentsComponent },
 	{ path: 'proposals', component: ProposalListComponent },
 	{ path: 'proposals/new', component: ProposalNewComponent },
-	{ path: 'proposals/:id', component: ProposalShowComponent }
+	{ path: 'proposal/:id', component: ProposalShowComponent },
 ]
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { Component }	from '@angular/core';
+import { Component } from '@angular/core';
 import { Proposal } from './proposal';
 
 @Component({
@@ -7,15 +7,14 @@ import { Proposal } from './proposal';
 	templateUrl: 'proposal-list.component.html',
 	styleUrls: ['proposal-list.component.css']
 })
-
 export class ProposalListComponent {
-	proposalOne: Proposal = new Proposal(15, 'Abc Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com')
-	proposalTwo: Proposal = new Proposal(90, 'Jkl Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com')
-	proposalThree: Proposal = new Proposal(300, 'Mno Company', 'http://google.com', 'Ruby on Rails', 150, 120, 15, 'aaron@test.com')
+	proposalOne: Proposal = new Proposal(15, 'Abc Company', 'https://devcampportfolio.herokuapp.com/', 'Ruby on Rails', 150, 120, 15, 'test@test.com')
+	proposalTwo: Proposal = new Proposal(99, 'XYZ Company', 'https://devcampportfolio.herokuapp.com/', 'Ruby on Rails', 150, 120, 15, 'test@test.com')
+	proposalThree: Proposal = new Proposal(300, 'Something Company', 'https://devcampportfolio.herokuapp.com/', 'Ruby on Rails', 150, 120, 15, 'test@test.com')
 
 	proposals: Proposal[] = [
-			this.proposalOne, 
-			this.proposalTwo, 
-			this.proposalThree
+		this.proposalOne,
+		this.proposalTwo,
+		this.proposalThree
 	]
 }
