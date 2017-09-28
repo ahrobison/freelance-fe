@@ -34,10 +34,8 @@ export class ProposalListComponent implements OnInit {
 				);
 	}
 
-	gotToShow(proposal: Proposal): void {
+	goToShow(proposal: Proposal): void {
 		let link = ['/proposal', proposal.id];
 		this.router.navigate(link);
 	}
-
-
 }

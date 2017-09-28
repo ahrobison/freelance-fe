@@ -29,7 +29,7 @@ var ProposalListComponent = /** @class */ (function () {
         this.proposalService.getProposals()
             .subscribe(function (proposals) { return _this.proposals = proposals; }, function (error) { return _this.errorMessage = error; });
     };
-    ProposalListComponent.prototype.gotToShow = function (proposal) {
+    ProposalListComponent.prototype.goToShow = function (proposal) {
         var link = ['/proposal', proposal.id];
         this.router.navigate(link);
     };
